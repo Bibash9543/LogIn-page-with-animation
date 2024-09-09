@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>REgions</title>
+</head>
+<body>
+    <!--Simple login Page for Region-->
+    <div class="container" id="container">
+        <div class="left_side">
+
+            <!-- code for top elements -->
+        
+                <header>
+                    <img src="images/logo.png" alt="This is logo">
+                    <div class="text">
+                        <span>Are you a new customer?</span>
+                        <!-- <button class="enroll_now">Enroll Now</button> -->
+                        <div class="dropdown">
+                            <button class="dropdown-btn enroll_now">Enroll Now</button>
+                            <div class="dropdown-content">
+                                <h6>Enroll now to:</h6>
+                                <ul>
+                                    <li>✔ Access your loans online</li>
+                                    <li>✔ Pay your mortgage online</li>
+                                    <li>✔ View your mortgage statements</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                
+    
+            <!-- code for login form -->
+            <div class="loginContent">
+                <h1>Welcome Back</h1>
+                <p>Sign in to your regions Mymortgage account</p>
+                <form action="#">
+                    <div class="Username up">
+                        <input type="text" name="username" id="userId" placeholder="Online ID">
+                    </div>
+                    <div class="password up">
+                        <input type="password" name="password" id="Password" placeholder="Password">
+                    </div>
+                    
+                    <div class="remember">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <div class="login_btn">
+                        <button id="loginBtn">
+                        <span class="button-text">Log In</span>
+                        <span class="loader" style="display: none;"></span>
+                        </button>
+                    </div>
+                    
+                </form>
+                    <div class="forget">
+                        <a href="#">Forget Online Id?</a>
+                        <a href="#">Forget Password?</a>
+                    </div>
+
+            </div>
+
+            <!-- footer code -->
+                <footer>
+                <p><img src="images/houseicon.png" height="14px"> <span> Equal Housing Lender </span> · <span> Member FDIC </span></p>
+                <p>©2023 Regions Financial Corporation. All Rights Reserved. <span> <a href="#">1 (800) REGIONS</a></span></p>
+            </footer>
+            
+        </div>
+
+        <div class="right_side_image">
+            <img src="images/houseimg.jpeg" alt="This is house image" class="house">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
