@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: bibash_font;
+    src: url(VisbyRoundCF-DemiBold.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bibash_font;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 102vh;
+}
+
+.container{
+    padding-top: 2rem;
+    display: flex;
+    width: 100%;
+    max-width: 1350px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    
+}
+.left_side{
+    
+    width: 50%;
+    padding:0 40px 40px;
+}
+.right_side_image{
+    width: 45%;
+}
+.house{
+    width: 90%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+header img{
+    height: 35px;
+}
+header .text{
+    display: flex;
+    align-items: center;
+}
+header .text span{
+    color: #7f7f7f;
+}
+header .text .enroll_now{
+    border: 1px solid #b1cea8;
+    padding: 10px 17px;
+    margin-left: 1rem;
+    border-radius: 2rem;
+    background-color: white;
+    color: #3c6b33;
+    cursor: pointer;
+    font-weight: 550;
+}
+
+
+.loginContent{
+    
+    text-align: center;
+}
+.loginContent h1{
+    font-size: 40px;
+    font-weight: 800;
+}
+.loginContent p{
+    font-size: 15px;
+    color: #7f7f7f;
+    padding:10px 0 40px 0;
+}
+.up{
+    text-align: center;
+}
+input[type="text"],input[type="password"]{
+    width: 70%;
+    padding: 16px 0 16px 6px;
+    margin-bottom: 10px;
+    border: 1px solid #E2E2E2;
+    border-radius: 5px;
+    background-color: white;
+}
+
+input::placeholder {
+    padding-left: 6px;
+    color: #aaa;
+    font-size: 13px;
+}
+input:focus{
+
+    outline: none;
+    border: 2px solid #4ca142; 
+    box-shadow: 0 0 5px rgba(76, 161, 66, 0.5); 
+}
+
+.remember{
+    margin-top: 12px;
+    margin-left: 5.7rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: #7f7f7f;
+
+}
+
+/* Hide default checkbox */
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+input[type="checkbox"]+label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4ca142;
+    background-color: white; 
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Change the background color when the checkbox is checked */
+input[type="checkbox"]:checked+label::before {
+    content: '✔';
+}
+
+.remember label{
+    padding-left: 6px;
+}
+.login_btn button{
+    width: 70%;
+    margin-top: 12px;
+    border-radius: 1.5rem;
+    border: none;
+    padding: .9rem 0;
+    color: white;
+    font-weight: bold;
+    background-color: #548D44;
+    cursor: pointer;
+}
+.forget{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.forget a{
+    text-decoration: none;
+    color: #789B73;
+    font-weight: 500;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 6rem;
+    color: #7f7f7f;
+    font-size: 12px;
+}
+
+footer a {
+    color: #4ca142;
+    text-decoration: none;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer p span{
+    padding-left: 1rem;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background-color: #E8F4EA;
+    border: 1px solid #E8F4EA;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: light;
+    cursor: pointer;
+}
+
+.dropdown-content h6 {
+    margin-bottom: 10px;
+}
+
+.dropdown-content ul {
+    list-style: none;
+}
+
+.dropdown-content li {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 120%;
+    right: 0; 
+    background-color: #2A2A2A;
+    color: white;
+    padding: 15px;
+    width: 230px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 20px; 
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent #2A2A2A transparent;
+}
+
+   /* Loading spinner  */
+.loader {
+    border: 4px solid #f3f3f3; 
+    border-top: 4px solid #548D44; 
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1.5s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+} 
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Animations */
+@keyframes slideDownAndDisappear {
+    0% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+    100% {
+    transform: translateY(100%);
+    opacity: 0;
+    }
+}
+
+@keyframes scaleOutCenter {
+    0% {
+    transform: scale(1);
+    }
+    100% {
+    transform: scale(0);
+    }
+}
+
+@keyframes scaleInCenter {
+    0% {
+    transform: scale(0);
+    }
+    100% {
+    transform: scale(1);
+    
+    }
+}
+
+
+@keyframes slideDownReappear {
+    0% {
+    transform: translateY(-100%);
+    opacity: 0;
+    }
+    100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
